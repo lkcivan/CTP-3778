@@ -159,7 +159,7 @@ class gradingform_guide_renderer extends plugin_renderer_base {
                       'name' => '{NAME}[criteria][{CRITERION-id}][descriptionmarkers]'));
             $descriptionmarkers = html_writer::tag('div',
                 format_text($criterion['descriptionmarkers'], $criterion['descriptionmarkersformat']),
-				array('class'=>'criteriondescriptionmarkers'.$descmarkerclass,
+				array('class'=>''.$descmarkerclass,
                       'name' => '{NAME}[criteria][{CRITERION-id}][descriptionmarkers]'));
             $maxscore   = html_writer::tag('div', s($criterion['maxscore']),
                 array('class'=>'criteriondescriptionscore', 'name' => '{NAME}[criteria][{CRITERION-id}][maxscore]'));
